@@ -1,1 +1,42 @@
-<p>dashboard works!</p>
+<div class="containe">
+  <div class="row">
+    <div class="col-7">
+      <canvas baseChart class="chart"
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend"
+        [type]="lineChartType"></canvas>
+
+      <ngx-charts-bar-vertical
+  [view]="[800, 300]"
+  scheme="cool"
+  [results]="single"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="legend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="'Variable'"
+  [yAxisLabel]="'Valor'"
+>
+</ngx-charts-bar-vertical>
+
+    </div>
+    <div class="col-5">
+      <ngx-charts-gauge
+  [view]="[500,300]"
+  [min]="0"
+  [max]="100"
+  [results]="valvula"
+  [units]="'%'"
+  [legend]="legend"
+  [legendPosition]="legendPosition"
+  [showText]="showText"
+  [tooltipDisabled]="tooltipDisabled"
+></ngx-charts-gauge>
+    </div>
+  </div>
+</div>
+
+

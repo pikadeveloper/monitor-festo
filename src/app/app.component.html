@@ -7,10 +7,7 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
     <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
+    <p>Lorem, ipsum dolor sit amet consectetur.</p>
   </mat-drawer>
   <div class="example-sidenav-content">
     <router-outlet></router-outlet>
