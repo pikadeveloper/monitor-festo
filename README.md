@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
+## Requerimientos
+Es necesario tener instalado node.js [NodeJs V18.16.1](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)
+Instalar angular `npm install -g @angular/cli`
+`npm install` para instalar las dependencias
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
