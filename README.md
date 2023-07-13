@@ -4,29 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Requerimientos
 Es necesario tener instalado node.js [NodeJs V18.16.1](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)
-Instalar angular `npm install -g @angular/cli`
+Dentro de la carpeta Instalar angular `npm install -g @angular/cli`
 `npm install` para instalar las dependencias
 
-## Development server
+## Servidor de Desarrollo
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Ayuda
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para obtener más ayuda sobre Angular CLI, use `ng help` o consulte la [Angular CLI Overview y referencia de comandos](https://angular.io/cli) page.
