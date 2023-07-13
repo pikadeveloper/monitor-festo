@@ -88,10 +88,6 @@ export class DashboardComponent implements OnInit, OnDestroy{
   constructor() {}
     single = [
       {
-        name: 'Posición de la válvula',
-        value: 75,
-      },
-      {
         name: 'Presión de alimentación',
         value: 4.5
       },
@@ -119,7 +115,7 @@ export class DashboardComponent implements OnInit, OnDestroy{
 
     valvula: { name: string, value: number }[] = [
       {
-        name: 'Posición de la válvula',
+        name: 'Porcentaje de apertura de la válvula',
         value: 75
       }
     ];
