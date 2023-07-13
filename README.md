@@ -9,7 +9,7 @@ Dentro de la carpeta Instalar angular `npm install -g @angular/cli`
 
 ## Servidor de Desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecute `ng serve` para iniciar el servidor de desarrollo. Navega hacia la dirección `http://localhost:4200/` para visualizar el servidor de desarrollo. La aplicación se recargará automáticamente si cambia alguno de los archivos de origen.
 
 ## Ayuda
 
