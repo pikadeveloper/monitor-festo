@@ -68,9 +68,9 @@ export class DashboardComponent implements OnInit, OnDestroy{
   }
 
   updateChartData() {
-    const lastValue = this.lineChartData[0].data[this.lineChartData[0].data.length - 1] as number || 40; // Obtener el último valor o 0 si no hay valores aún
+    const lastValue = this.lineChartData[0].data[this.lineChartData[0].data.length - 1] as number || 60; // Obtener el último valor o 0 si no hay valores aún
     const randomChange = Math.random() * 5 - 2.5; // Generar un cambio incremental aleatorio limitado a un rango de -5 a +5
-    const newValue = Math.min(50, Math.max(0, lastValue + randomChange)); // Calcular el nuevo valor asegurándose de que esté dentro del rango de 0 a 100
+    const newValue = Math.min(90, Math.max(0, lastValue + randomChange)); // Calcular el nuevo valor asegurándose de que esté dentro del rango de 0 a 100
 
     const timestamp = new Date().toLocaleTimeString(); // Agregar una marca de tiempo
 
@@ -93,7 +93,7 @@ export class DashboardComponent implements OnInit, OnDestroy{
   updateChartStyles() {
     const lastValue = this.lineChartData[0].data[this.lineChartData[0].data.length - 1] || 0; // Obtener el último valor o 0 si no hay valores aún
 
-    if (typeof lastValue === 'number' && lastValue < 20) {
+    if (typeof lastValue === 'number' && lastValue < 40) {
       this.lineChartStyles = { 'background-color': 'red' };
     } else {
       this.lineChartStyles = { 'background-color': 'green' };
@@ -125,8 +125,8 @@ export class DashboardComponent implements OnInit, OnDestroy{
 
     valvula: { name: string, value: number }[] = [
       {
-        name: 'Porcentaje de apertura de la válvula',
-        value: 75
+        name: 'Presión de alimentación',
+        value: 4.5
       }
     ];
 

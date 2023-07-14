@@ -30,9 +30,9 @@
       <ngx-charts-gauge
       [view]="[500,300]"
       [min]="0"
-      [max]="100"
+      [max]="20"
       [results]="valvula"
-      [units]="'%'"
+      [units]="'bar'"
       [legend]="legend"
       legendTitle=""
       [legendPosition]="legendPosition"
@@ -43,12 +43,12 @@
     <div class="col-7">
       <mat-card class="example-card" [ngStyle]="lineChartStyles" style="width: 20em;  position: relative; top: 7em;">
         <mat-card-header>
-          <mat-card-title style="color: white;">Alarma Presión Interna Valvulas</mat-card-title>
+          <mat-card-title style="color: white;">Alarma Posición Interna Valvulas</mat-card-title>
         </mat-card-header>
         <mat-card-content>
           <p style="color: white;">Indicación de estado</p>
-          <p style="color: white;">Mayor a 20° Color Verde</p>
-          <p style="color: white;">Menor o igual a 20° Color Rojo</p>
+          <p style="color: white;">Mayor a 40° Color Verde, Máx 90° (Apertura Total Valvula)</p>
+          <p style="color: white;">Menor o igual a 40° Color Rojo</p>
           <mat-divider></mat-divider>
           <mat-progress-bar color="accent"  mode="indeterminate"></mat-progress-bar>
         </mat-card-content>
