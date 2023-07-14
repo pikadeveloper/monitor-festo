@@ -4,6 +4,7 @@ import { interval, Subscription } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 import { BaseChartDirective } from 'ng2-charts';
 
+
 //lineChartType: ChartType = 'line';
 @Component({
   selector: 'app-dashboard',
@@ -45,6 +46,8 @@ export class DashboardComponent implements OnInit, OnDestroy{
 
   lineChartType: ChartType = 'line';
 
+  lineChartStyles = {};
+
   private alive = true;
   private subscription: Subscription | undefined;
 
@@ -53,6 +56,7 @@ export class DashboardComponent implements OnInit, OnDestroy{
       .pipe(takeWhile(() => this.alive))
       .subscribe(() => {
         this.updateChartData();
+        this.updateChartStyles();
       });
   }
 
@@ -86,6 +90,15 @@ export class DashboardComponent implements OnInit, OnDestroy{
     }
   }
 
+  updateChartStyles() {
+    const lastValue = this.lineChartData[0].data[this.lineChartData[0].data.length - 1] || 0; // Obtener el último valor o 0 si no hay valores aún
+
+    if (typeof lastValue === 'number' && lastValue < 20) {
+      this.lineChartStyles = { 'background-color': 'red' };
+    } else {
+      this.lineChartStyles = { 'background-color': 'green' };
+    }
+  }
   constructor() {}
     single = [
       {

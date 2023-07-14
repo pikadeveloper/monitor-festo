@@ -40,6 +40,20 @@
       [tooltipDisabled]="tooltipDisabled">
       </ngx-charts-gauge>
     </div>
+    <div class="col-7">
+      <mat-card class="example-card" [ngStyle]="lineChartStyles" style="width: 20em;  position: relative; top: 7em;">
+        <mat-card-header>
+          <mat-card-title style="color: white;">Alarma Presión Interna Valvulas</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p style="color: white;">Indicación de estado</p>
+          <p style="color: white;">Mayor a 20° Color Verde</p>
+          <p style="color: white;">Menor o igual a 20° Color Rojo</p>
+          <mat-divider></mat-divider>
+          <mat-progress-bar color="accent"  mode="indeterminate"></mat-progress-bar>
+        </mat-card-content>
+      </mat-card>
+    </div>
   </div>
 </div>
 

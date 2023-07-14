@@ -4,6 +4,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NgChartsModule } from 'ng2-charts';
@@ -33,7 +36,9 @@ import { MonitorComponent } from './pages/monitor/monitor.component';
     MatSidenavModule,
     NgxChartsModule,
     NgChartsModule,
-
+    MatProgressBarModule,
+    MatDividerModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
