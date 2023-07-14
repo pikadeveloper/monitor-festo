@@ -1,20 +1,22 @@
-<div class="containe">
+<div class="container-fluid mt-3">
   <div class="row">
-    <div class="col-7">
+    <div class="col-6">
       <canvas baseChart class="chart"
         [datasets]="lineChartData"
         [labels]="lineChartLabels"
         [options]="lineChartOptions"
         [legend]="lineChartLegend"
         [type]="lineChartType"></canvas>
-
-      <ngx-charts-bar-vertical
-  [view]="[800, 300]"
+</div>
+<div class="col-5">
+  <ngx-charts-bar-vertical
+  [view]="[900, 300]"
   scheme="cool"
   [results]="single"
   [xAxis]="showXAxis"
   [yAxis]="showYAxis"
   [legend]="legend"
+  legendTitle="Leyenda"
   [showXAxisLabel]="showXAxisLabel"
   [showYAxisLabel]="showYAxisLabel"
   [xAxisLabel]="'Variable'"
@@ -22,19 +24,21 @@
 >
 </ngx-charts-bar-vertical>
 
-    </div>
-    <div class="col-5">
+
+</div>
+    <div class="col-5 mt-3">
       <ngx-charts-gauge
-  [view]="[500,300]"
-  [min]="0"
-  [max]="100"
-  [results]="valvula"
-  [units]="'%'"
-  [legend]="legend"
-  [legendPosition]="legendPosition"
-  [showText]="showText"
-  [tooltipDisabled]="tooltipDisabled"
-></ngx-charts-gauge>
+      [view]="[500,300]"
+      [min]="0"
+      [max]="100"
+      [results]="valvula"
+      [units]="'%'"
+      [legend]="legend"
+      legendTitle=""
+      [legendPosition]="legendPosition"
+      [showText]="showText"
+      [tooltipDisabled]="tooltipDisabled">
+      </ngx-charts-gauge>
     </div>
   </div>
 </div>

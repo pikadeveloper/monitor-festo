@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ChartType, ChartOptions, ChartDataset } from 'chart.js';
 import { interval, Subscription } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
@@ -8,7 +8,8 @@ import { BaseChartDirective } from 'ng2-charts';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements OnInit, OnDestroy{
   @ViewChild(BaseChartDirective, { static: true }) chart!: BaseChartDirective;
@@ -102,10 +103,6 @@ export class DashboardComponent implements OnInit, OnDestroy{
       {
         name: 'Señal de fuerza',
         value: 12
-      },
-      {
-        name: 'Alarmas o eventos',
-        value: 0
       },
       {
         name: 'Estado de la comunicación',
